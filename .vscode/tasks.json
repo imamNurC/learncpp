@@ -1,0 +1,27 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "${file}",
+                "-o",
+                "./bin/${fileBasenameNoExtension}.exe",
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "run",
+            "command": "./bin/${fileBasenameNoExtension}.exe",
+            "dependsOn":["C/C++: gcc.exe build active file"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ],
+    "version": "2.0.0"
+}
