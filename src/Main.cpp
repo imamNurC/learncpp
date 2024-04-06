@@ -26,6 +26,7 @@ public:
 
     //constructtor class 
     MahasiswaConstruct(string inNama, string inKampus, string inNIM, double inIPK ){
+        //call with namespace
         MahasiswaConstruct::nama = inNama;
         MahasiswaConstruct::kampus = inKampus;
         MahasiswaConstruct::NIM = inNIM;
@@ -52,6 +53,7 @@ int main(){
 
     cout << "============================================================" << "\n";
 
+    //with construct
     MahasiswaConstruct mhs = MahasiswaConstruct("Imam", "BaniSoleh", "43a87006210158", 3.85);
 
 
